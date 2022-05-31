@@ -52,11 +52,92 @@
         </div>
 
         <!--Body-->
+        <div class="row">
+          <span class="fw-light mt-4">* Ces zones sont obligatoires</span>
+          <h1 class="mt-3">Vos Coordonnées</h1>
 
+          <form action="">
+            <!--Nom-->
+            <div class="mb-3 form-group">
+              <label for="last-name" class="form-label">Nom*</label>
+              <input type="text" name="last-name" id="last-name" class="form-control" placeholder="Veuillez saisir votre nom">
+            </div>
+            <!--Prénom-->
+            <div class="mb-3 form-group">
+              <label for="first-name" class="form-label">Prénom*</label>
+              <input type="text" name="first-name" id="first-name" class="form-control" placeholder="Veuillez saisir votre prénom">
+            </div>
+
+            <div class="form-group">
+              <p class="form-label mb-3">Sexe*</p>
+              <!--Femme-->
+              <div class="form-check form-check-inline">
+                <input type="radio" name="sex-radio" id="sex-female" class="form-check-input">
+                <label for="sex-female" class="form-check-label">Féminin</label>
+              </div>
+              <!--Homme-->
+              <div class="form-check form-check-inline">
+                <input type="radio" name="sex-radio" id="sex-male" class="form-check-input">
+                <label for="sex-male" class="form-check-label">Masculin</label>
+              </div>
+            </div>
+            <!--Date de naissance-->
+            <div class="mt-3 form-group">
+              <label for="birth-date" class="form-label">Date de naissance*</label>
+              <input type="date" name="birth-date" id="birth-date" class="form-control text-center text-secondary">
+            </div>
+            <!--CP-->
+            <div class="mt-3 form-group">
+              <label for="zip" class="form-label">Code Postal*</label>
+              <input type="text" name="zip" id="zip" class="form-control">
+            </div>
+            <!--Adresse-->
+            <div class="mt-3 form-group">
+              <label for="address" class="form-label">Adresse</label>
+              <input type="text" name="address" id="address" class="form-control">
+            </div>
+            <!--Ville-->
+            <div class="mt-3 form-group">
+              <label for="city" class="form-label">Ville</label>
+              <input type="text" name="city" id="city" class="form-control">
+            </div>
+            <!--Email-->
+            <div class="mt-3 form-group">
+              <label for="mail" class="form-label">Email*</label>
+              <input type="text" name="mail" id="mail" class="form-control" placeholder="dave.loper@afpa.fr">
+            </div>
+
+            <h1 class="mt-4">Votre demande</h1>
+            <!--Sujet-->
+            <div class="mt-3 form-group">
+              <label for="object" class="form-label">Sujet</label>
+              <select name="object" id="object" class="form-select">
+                <option selected>Veuillez séléctionner un sujet</option>
+                <option value="command">Mes commandes</option>
+                <option value="product">Question sur un produit</option>
+                <option value="complaint">Réclamation</option>
+                <option value="other">Autres</option>
+              </select>
+            </div>
+            <!--Votre question-->
+            <div class="mt-3 form-group">
+              <label for="question" class="form-label">Votre question* :</label>
+              <textarea name="question-text" id="question-text" cols="30" rows="3" class="form-control"></textarea>
+            </div>
+            <div class="mt-3 form-check form-group">
+              <input type="checkbox" value="accept" id="checkbox-accept" class="form-check-input">
+              <label for="checkbox-accept" class="form-check-label">J'accepte le traitement informatique de ce formulaire.</label>
+            </div>
+            <div class="mt-3 form-group">
+              <input type="button" id="submit" value="Envoyer" class="btn btn-dark">
+              <input type="button" id="submit" value="Annuler" class="btn btn-dark">
+            </div>
+          </form>
+        </div>
 
         <!--Footer-->
-        <footer class="navbar navbar-expand-lg navbar-dark bg-dark">
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <footer class="navbar navbar-expand-lg navbar-dark bg-dark rounded-1 mt-3">
+            <button class="navbar-toggler mx-3" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
               </button>
 
