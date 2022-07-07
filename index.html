@@ -1,50 +1,58 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
     <!--Bootstrap CSS-->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
     <link rel="stylesheet" href="css/style.css">
     <title>Accueil</title>
 </head>
+
 <body>
     <div class="container-fluid">
         <!--Header-->
-        <header class="row d-none d-lg-flex">
-            <div class="col-3">
-                <img src="img/jarditou_logo.jpg" alt="Logo Jarditou" class="w-100 h-auto">
+        <header class="row">
+            <div class="d-none d-lg-flex">
+                <div class="col-3">
+                    <img src="img/jarditou_logo.jpg" alt="Logo Jarditou" class="w-100 h-auto">
+                </div>
+                <div class="offset-5 col-3">
+                    <h1 class="mt-5">Tous le Jardin</h1>
+                </div>
             </div>
-            <div class="offset-5 col-3">
-                <h1 class="mt-5">Tous le Jardin</h1>
-            </div>
-        </header>
 
-        <!--Navbar top-->
-        <nav class="navbar navbar-expand-lg bg-light">
-            <a class="navbar-brand mx-3" href="#">Jarditou.com</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse mx-2" id="navbarSupportedContent">
-              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                <li class="nav-item">
-                  <a class="nav-link active" aria-current="page" href="#">Accueil</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="tableau.html">Tableau</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="contact.html">Contact</a>
-                </li>
-              </ul>
-              <form class="d-flex mx-lg-3" role="search">
-                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                <button class="btn btn-outline-success" type="submit">Rechercher</button>
-              </form>  
-            </div> 
-        </nav>
+            <!--Navbar top-->
+            <nav class="navbar navbar-expand-lg bg-light">
+                <a class="navbar-brand mx-3" href="#">Jarditou.com</a>
+                <button class="navbar-toggler me-3" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarHeader" aria-controls="navbarHeader" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse mx-2" id="navbarHeader">
+                    <ul class="navbar-nav me-auto ms-3">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Accueil</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="tableau.html">Tableau</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contact.html">Contact</a>
+                        </li>
+                    </ul>
+                    <form class="d-flex mx-lg-3" role="search">
+                        <input class="form-control me-2" type="search" placeholder="Votre promotion"
+                            aria-label="Votre promotion">
+                        <button class="btn btn-outline-success" type="submit">Rechercher</button>
+                    </form>
+                </div>
+            </nav>
+        </header>
 
         <!--Promotion-->
         <div class="row">
@@ -53,56 +61,75 @@
 
         <!--Body-->
         <!--Article-->
-        <div class="row shadow-lg">
-            <div class="col-12 col-lg-8 shadow">
-                <section class="mt-4">
-                    <article>
-                        <h2>L'entreprise</h2>
-                        <p>Notre entreprise familiale met tout son savoir-faire à votre disposition dans le domaine du jardin et du paysagisme.</p>
-                        <p>Créée il y a 70 ans, notre entreprise vend fleurs, arbustes, matériel à main et motorisés.</p>
-                        <p>Implantés à Amiens, nous intervenons dans tout le département de la Somme : Albert, Doullens, Péronne, Abbeville, Corbie</p>
-                    </article>
-                </section>
-                <section>
-                    <article>
-                        <h2>Qualité</h2>
-                        <p>Nous mettons à votre disposition un service personnalisé, avec 1 seul interlocuteur durant tout votre projet.</p>
-                        <p>Vous serez séduit par notre expertise, nos compétences et notre sérieux.</p>
-                    </article>
-                    <article>
-                        <h2>Devis gratuit</h2>
-                        <p>Vous pouvez bien sûr contacter pour de plus amples informations ou pour une demande d’intervention. Vous souhaitez un devis ? Nous vous le réalisons gratuitement.</p>
-                    </article>
-                </section>
+        <div class="row">
+            <div class="col-12 col-lg-8 pe-0">
+                <div class="shadow h-100 p-3">
+                    <section class="">
+                        <article>
+                            <h2>L'entreprise</h2>
+                            <p>Notre entreprise familiale met tout son savoir-faire à votre disposition dans le domaine
+                                du
+                                jardin et du paysagisme.</p>
+                            <p>Créée il y a 70 ans, notre entreprise vend fleurs, arbustes, matériel à main et
+                                motorisés.
+                            </p>
+                            <p>Implantés à Amiens, nous intervenons dans tout le département de la Somme : Albert,
+                                Doullens,
+                                Péronne, Abbeville, Corbie</p>
+                        </article>
+                    </section>
+                    <section>
+                        <article>
+                            <h2>Qualité</h2>
+                            <p>Nous mettons à votre disposition un service personnalisé, avec 1 seul interlocuteur
+                                durant
+                                tout votre projet.</p>
+                            <p>Vous serez séduit par notre expertise, nos compétences et notre sérieux.</p>
+                        </article>
+                        <article>
+                            <h2>Devis gratuit</h2>
+                            <p>Vous pouvez bien sûr contacter pour de plus amples informations ou pour une demande
+                                d’intervention. Vous souhaitez un devis ? Nous vous le réalisons gratuitement.</p>
+                        </article>
+                    </section>
+                </div>
             </div>
-        <!--Colonne-->
-            <div class="col-12 col-lg-4 pt-3 pt-lg-0 shadow-lg">
+            <!--Colonne-->
+            <div class="col-12 col-lg-4 ps-lg-0  pt-3 pt-lg-0">
                 <h2 class="text-center pt-lg-3 h-100 fw-normal bg-warning">[Colonne de droite]</h2>
             </div>
         </div>
 
         <!--Footer-->
-        <footer class="navbar navbar-expand-lg navbar-dark bg-dark rounded-1 mt-3">
-            <button class="navbar-toggler mx-3" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-              </button>
+        <footer>
+            <nav class="navbar navbar-expand-lg navbar-dark bg-dark rounded-1 mt-3">
+                <button class="navbar-toggler mx-3" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarFooter" aria-controls="navbarFooter" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
 
-              <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                    <li class="nav-item">
-                        <a href="#" class="nav-link">Mentions légales</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="#" class="nav-link">Horaires</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="#" class="nav-link">Plan du site</a>
-                    </li>
-                </ul>
-              </div>
+                <div class="collapse navbar-collapse" id="navbarFooter">
+                    <ul class="navbar-nav ms-3">
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">Mentions légales</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">Horaires</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">Plan du site</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
         </footer>
     </div>
+
     <!--Bootstrap JS-->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+        crossorigin="anonymous"></script>
 </body>
+
 </html>

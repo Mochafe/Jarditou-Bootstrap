@@ -1,162 +1,177 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
-    <!--Bootstrap CSS-->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
-    <link rel="stylesheet" href="css/style.css">
-    <title>Accueil</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+  <!--Bootstrap CSS-->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/style.css">
+  <title>Accueil</title>
 </head>
+
 <body>
-    <div class="container-fluid">
-        <!--Header-->
-        <header class="row d-none d-lg-flex">
-            <div class="col-3">
-                <img src="img/jarditou_logo.jpg" alt="Logo Jarditou" class="w-100 h-auto">
-            </div>
-            <div class="offset-5 col-3">
-                <h1 class="mt-5">Tous le Jardin</h1>
-            </div>
-        </header>
-
-        <!--Navbar top-->
-        <nav class="navbar navbar-expand-lg bg-light">
-            <a class="navbar-brand mx-3" href="index.html">Jarditou.com</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse mx-2" id="navbarSupportedContent">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                    <li class="nav-item">
-                      <a class="nav-link" aria-current="page" href="index.html">Accueil</a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link" href="tableau.html">Tableau</a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link active" href="#">Contact</a>
-                    </li>
-                  </ul>
-              <form class="d-flex mx-lg-3" role="search">
-                <input class="form-control" type="search" placeholder="Search" aria-label="Search">
-                <button class="btn btn-outline-success" type="submit">Rechercher</button>
-              </form>  
-            </div> 
-        </nav>
-
-        <!--Promotion-->
-        <div class="row">
-            <img src="img/promotion.jpg" alt="Affiche de promotion" class="d-block col-12">
+  <div class="container-fluid">
+    <!--Header-->
+    <header class="row">
+      <div class="d-none d-lg-flex">
+        <div class="col-3">
+          <img src="img/jarditou_logo.jpg" alt="Logo Jarditou" class="w-100 h-auto">
         </div>
+        <div class="offset-5 col-3">
+          <h1 class="mt-5">Tous le Jardin</h1>
+        </div>
+      </div>
 
-        <!--Body-->
-        <div class="row">
-          <span class="fw-light mt-4">* Ces zones sont obligatoires</span>
-          <h1 class="mt-3">Vos Coordonnées</h1>
-
-          <form action="">
-            <!--Nom-->
-            <div class="mb-3 form-group">
-              <label for="last-name" class="form-label">Nom*</label>
-              <input type="text" name="last-name" id="last-name" class="form-control" placeholder="Veuillez saisir votre nom">
-            </div>
-            <!--Prénom-->
-            <div class="mb-3 form-group">
-              <label for="first-name" class="form-label">Prénom*</label>
-              <input type="text" name="first-name" id="first-name" class="form-control" placeholder="Veuillez saisir votre prénom">
-            </div>
-
-            <div class="form-group">
-              <p class="form-label mb-3">Sexe*</p>
-              <!--Femme-->
-              <div class="form-check form-check-inline">
-                <input type="radio" name="sex-radio" id="sex-female" class="form-check-input">
-                <label for="sex-female" class="form-check-label">Féminin</label>
-              </div>
-              <!--Homme-->
-              <div class="form-check form-check-inline">
-                <input type="radio" name="sex-radio" id="sex-male" class="form-check-input">
-                <label for="sex-male" class="form-check-label">Masculin</label>
-              </div>
-            </div>
-            <!--Date de naissance-->
-            <div class="mt-3 form-group">
-              <label for="birth-date" class="form-label">Date de naissance*</label>
-              <input type="date" name="birth-date" id="birth-date" class="form-control text-center text-secondary">
-            </div>
-            <!--CP-->
-            <div class="mt-3 form-group">
-              <label for="zip" class="form-label">Code Postal*</label>
-              <input type="text" name="zip" id="zip" class="form-control">
-            </div>
-            <!--Adresse-->
-            <div class="mt-3 form-group">
-              <label for="address" class="form-label">Adresse</label>
-              <input type="text" name="address" id="address" class="form-control">
-            </div>
-            <!--Ville-->
-            <div class="mt-3 form-group">
-              <label for="city" class="form-label">Ville</label>
-              <input type="text" name="city" id="city" class="form-control">
-            </div>
-            <!--Email-->
-            <div class="mt-3 form-group">
-              <label for="mail" class="form-label">Email*</label>
-              <input type="text" name="mail" id="mail" class="form-control" placeholder="dave.loper@afpa.fr">
-            </div>
-
-            <h1 class="mt-4">Votre demande</h1>
-            <!--Sujet-->
-            <div class="mt-3 form-group">
-              <label for="object" class="form-label">Sujet</label>
-              <select name="object" id="object" class="form-select">
-                <option selected>Veuillez séléctionner un sujet</option>
-                <option value="command">Mes commandes</option>
-                <option value="product">Question sur un produit</option>
-                <option value="complaint">Réclamation</option>
-                <option value="other">Autres</option>
-              </select>
-            </div>
-            <!--Votre question-->
-            <div class="mt-3 form-group">
-              <label for="question" class="form-label">Votre question* :</label>
-              <textarea name="question-text" id="question-text" cols="30" rows="3" class="form-control"></textarea>
-            </div>
-            <div class="mt-3 form-check form-group">
-              <input type="checkbox" value="accept" id="checkbox-accept" class="form-check-input">
-              <label for="checkbox-accept" class="form-check-label">J'accepte le traitement informatique de ce formulaire.</label>
-            </div>
-            <div class="mt-3 form-group">
-              <input type="button" id="submit" value="Envoyer" class="btn btn-dark">
-              <input type="button" id="submit" value="Annuler" class="btn btn-dark">
-            </div>
+      <!--Navbar top-->
+      <nav class="navbar navbar-expand-lg bg-light">
+        <a class="navbar-brand mx-3" href="#">Jarditou.com</a>
+        <button class="navbar-toggler me-3" type="button" data-bs-toggle="collapse" data-bs-target="#navbarHeader"
+          aria-controls="navbarHeader" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse mx-2" id="navbarHeader">
+          <ul class="navbar-nav me-auto ms-3">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Accueil</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="tableau.html">Tableau</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="#">Contact</a>
+            </li>
+          </ul>
+          <form class="d-flex mx-lg-3" role="search">
+            <input class="form-control me-2" type="search" placeholder="Votre promotion" aria-label="Votre promotion">
+            <button class="btn btn-outline-success" type="submit">Rechercher</button>
           </form>
         </div>
+      </nav>
+    </header>
 
-        <!--Footer-->
-        <footer class="navbar navbar-expand-lg navbar-dark bg-dark rounded-1 mt-3">
-            <button class="navbar-toggler mx-3" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-              </button>
-
-              <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                    <li class="nav-item">
-                        <a href="#" class="nav-link">Mentions légales</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="#" class="nav-link">Horaires</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="#" class="nav-link">Plan du site</a>
-                    </li>
-                </ul>
-              </div>
-        </footer>
+    <!--Promotion-->
+    <div class="row">
+      <img src="img/promotion.jpg" alt="Affiche de promotion" class="d-block col-12">
     </div>
-    <!--Bootstrap JS-->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+
+    <!--Body-->
+    <div class="row">
+      <span class="fw-light mt-4">* Ces zones sont obligatoires</span>
+      <h1 class="mt-3">Vos Coordonnées</h1>
+
+      <form action="">
+        <!--Nom-->
+        <div class="mb-3 form-group">
+          <label for="last-name" class="form-label">Nom*</label>
+          <input type="text" name="last-name" id="last-name" class="form-control"
+            placeholder="Veuillez saisir votre nom">
+        </div>
+        <!--Prénom-->
+        <div class="mb-3 form-group">
+          <label for="first-name" class="form-label">Prénom*</label>
+          <input type="text" name="first-name" id="first-name" class="form-control"
+            placeholder="Veuillez saisir votre prénom">
+        </div>
+
+        <div class="form-group">
+          <p class="form-label mb-3">Sexe*</p>
+          <!--Femme-->
+          <div class="form-check form-check-inline">
+            <input type="radio" name="sex-radio" id="sex-female" class="form-check-input">
+            <label for="sex-female" class="form-check-label">Féminin</label>
+          </div>
+          <!--Homme-->
+          <div class="form-check form-check-inline">
+            <input type="radio" name="sex-radio" id="sex-male" class="form-check-input">
+            <label for="sex-male" class="form-check-label">Masculin</label>
+          </div>
+        </div>
+        <!--Date de naissance-->
+        <div class="mt-3 form-group">
+          <label for="birth-date" class="form-label">Date de naissance*</label>
+          <input type="date" name="birth-date" id="birth-date" class="form-control text-center text-secondary">
+        </div>
+        <!--CP-->
+        <div class="mt-3 form-group">
+          <label for="zip" class="form-label">Code Postal*</label>
+          <input type="text" name="zip" id="zip" class="form-control">
+        </div>
+        <!--Adresse-->
+        <div class="mt-3 form-group">
+          <label for="address" class="form-label">Adresse</label>
+          <input type="text" name="address" id="address" class="form-control">
+        </div>
+        <!--Ville-->
+        <div class="mt-3 form-group">
+          <label for="city" class="form-label">Ville</label>
+          <input type="text" name="city" id="city" class="form-control">
+        </div>
+        <!--Email-->
+        <div class="mt-3 form-group">
+          <label for="mail" class="form-label">Email*</label>
+          <input type="text" name="mail" id="mail" class="form-control" placeholder="dave.loper@afpa.fr">
+        </div>
+
+        <h1 class="mt-4">Votre demande</h1>
+        <!--Sujet-->
+        <div class="mt-3 form-group">
+          <label for="object" class="form-label">Sujet</label>
+          <select name="object" id="object" class="form-select">
+            <option selected>Veuillez séléctionner un sujet</option>
+            <option value="command">Mes commandes</option>
+            <option value="product">Question sur un produit</option>
+            <option value="complaint">Réclamation</option>
+            <option value="other">Autres</option>
+          </select>
+        </div>
+        <!--Votre question-->
+        <div class="mt-3 form-group">
+          <label for="question" class="form-label">Votre question* :</label>
+          <textarea name="question-text" id="question-text" cols="30" rows="3" class="form-control"></textarea>
+        </div>
+        <div class="mt-3 form-check form-group">
+          <input type="checkbox" value="accept" id="checkbox-accept" class="form-check-input">
+          <label for="checkbox-accept" class="form-check-label">J'accepte le traitement informatique de ce
+            formulaire.</label>
+        </div>
+        <div class="mt-3 form-group">
+          <input type="button" id="submit" value="Envoyer" class="btn btn-dark">
+          <input type="button" id="submit" value="Annuler" class="btn btn-dark">
+        </div>
+      </form>
+    </div>
+
+    <!--Footer-->
+    <footer>
+      <nav class="navbar navbar-expand-lg navbar-dark bg-dark rounded-1 mt-3">
+        <button class="navbar-toggler mx-3" type="button" data-bs-toggle="collapse" data-bs-target="#navbarFooter"
+          aria-controls="navbarFooter" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarFooter">
+          <ul class="navbar-nav ms-3">
+            <li class="nav-item">
+              <a href="#" class="nav-link">Mentions légales</a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link">Horaires</a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link">Plan du site</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </footer>
+  </div>
+  <!--Bootstrap JS-->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+    crossorigin="anonymous"></script>
 </body>
+
 </html>
